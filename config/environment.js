@@ -18,6 +18,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      hotels: 'http://ec2-52-45-26-25.compute-1.amazonaws.com:5050/dev'
       // Here you can pass flags/options to your application instance
       // when it is created
     }

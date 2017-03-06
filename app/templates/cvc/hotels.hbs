@@ -1,0 +1,6 @@
+<h1>Rota cvc Hotels</h1>
+{{#each model as |hotel t|}}
+  {{#link-to 'cvc.room' hotel.id hotel.rooms.firstObject.rates.firstObject.rateToken}}{{hotel.name}}{{/link-to}}
+  {{hotel.description}}
+  <img src={{hotel.links.thumbnailImage.href}} alt="">
+{{/each}}

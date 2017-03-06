@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('hotels');
+  this.route('cvc', function() {
+    this.route('hotels');
+    this.route('room', { path: 'room/:id/:rateToken'});
+  });
 });
 
 export default Router;
